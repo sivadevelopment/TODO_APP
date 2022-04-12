@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>SampleMessageChannel</masterLabel>
+    <isExposed>flase</isExposed>
+    <description>This Event fired when cars filter changed</description>
+    <lightningMessageFields>
+        <fieldName>filters</fieldName>
+        <description>current car filters</description>
+    </lightningMessageFields>
+   
+</LightningMessageChannel>

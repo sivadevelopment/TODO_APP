@@ -1,0 +1,21 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 04-12-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+
+  <lightning-card title="The Cars Available" icon-name="standard:account">
+      <div class="slds-p-around_medium wrapper">
+            <template if:true={cars}>
+                      <div class="content">
+                          <template for:each={cars} for:item="car">
+                             <c-car-tile key={car.Id} car={car} onselected={handleOnselected}></c-car-tile>
+                          </template>
+                      </div>
+            </template>
+      </div>
+  </lightning-card>  
+</template>
